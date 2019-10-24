@@ -19,3 +19,35 @@
 2019-10-19 23:03:14 INFO  UserController:40 - Cristian M
 2019-10-19 23:07:17 INFO  UserController:40 - Cristian M
 2019-10-19 23:08:09 INFO  UserController:40 - Cristian M
+2019-10-20 21:16:37 INFO  UserController:40 - Cristian M
+2019-10-20 21:23:00 INFO  UserController:40 - Cristian M
+2019-10-20 21:23:04 INFO  UserController:40 - Cristian M
+2019-10-20 21:23:11 INFO  UserController:40 - Cristian M
+2019-10-21 23:29:29 INFO  UserController:40 - Cristian M
+2019-10-21 23:29:34 INFO  UserController:40 - Cristian M
+2019-10-23 21:24:16 INFO  Authenticationfilter:38 - attemptAuthentication
+2019-10-23 21:25:20 INFO  Authenticationfilter:38 - attemptAuthentication
+2019-10-23 21:26:53 INFO  Authenticationfilter:38 - attemptAuthentication
+2019-10-23 21:28:31 INFO  Authenticationfilter:38 - attemptAuthentication
+2019-10-23 21:28:54 INFO  Authenticationfilter:38 - attemptAuthentication
+2019-10-23 21:31:15 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 21:31:22 INFO  Authenticationfilter:38 - attemptAuthentication
+2019-10-23 21:38:08 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 21:38:16 INFO  Authenticationfilter:40 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 21:38:16 INFO  Authenticationfilter:63 - attemptAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 21:39:54 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 21:39:58 INFO  Authenticationfilter:40 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 21:39:58 INFO  Authenticationfilter:63 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 21:39:58 INFO  Authenticationfilter:71 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NDg3OTh9.KxY_9LDJ-lPvKqOd9FApSdnTD9w4K8G55Uv1cZKjFL3EFLFwvaDaQaF8GllWw2qjEI79Uf5mJgeVp63e5sZvVw
+2019-10-23 22:04:08 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:04:10 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:04:10 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:04:14 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:04:14 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:04:58 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:05:02 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:05:02 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:08:11 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:08:14 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:08:14 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:08:14 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTA0OTR9.qThK7wej34MWChP-GC6Ytg4YsGlppO24iNaBavFyFzvDFs_59nPRpKSHLQ-QHvClp2EXqhBn05dFA6yyS2WUNg

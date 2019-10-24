@@ -1,4 +1,4 @@
-package com.guerrero.app.ws.repository;
+package com.guerrero.app.ws.io.repositories;
 
 import com.guerrero.app.ws.entity.UserEntity;
 import org.springframework.data.repository.CrudRepository;
