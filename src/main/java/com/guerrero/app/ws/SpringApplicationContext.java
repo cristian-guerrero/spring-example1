@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContextAware;
  *
  * clase que permite con el metodo getBean
  * recibir un nombre y retornar un bean ya creado por el framework
- * spring
+ * para ser utilizado en clasese con no sean inyectables
  * por ejemplo los servicios inyectables los cuales son accesibles
  * desde cualquier parte de la aplicación si se tiene acceso al applicationContext
  * se recibe el nombre de la implementación no de la interfaz en

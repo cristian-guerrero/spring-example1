@@ -51,3 +51,71 @@
 2019-10-23 22:08:14 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
 2019-10-23 22:08:14 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
 2019-10-23 22:08:14 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTA0OTR9.qThK7wej34MWChP-GC6Ytg4YsGlppO24iNaBavFyFzvDFs_59nPRpKSHLQ-QHvClp2EXqhBn05dFA6yyS2WUNg
+2019-10-23 22:13:27 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:13:46 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:13:46 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:13:46 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTA4MjZ9.yLoPiOQeP_rfBfQc85519oz6jn_3SwajcojBnh8q5UTp9yNMUPMw6hC19Dqnf6qyWKPvnLVTmBNTWllKAV3kTA
+2019-10-23 22:13:48 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:13:48 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:13:48 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTA4Mjh9.IHUL2bZ2VZvXwe799vgi4Vw8EqjxuGquvD6_C_nxibTqiA6XslY0jf7aUS-yHY-i38zcpaPdhyLkWhq2rrcSBw
+2019-10-23 22:14:52 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:15:03 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:15:03 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:15:03 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTA5MDN9.TeuGLJPhF4NNC5FZ5wYNaHMlpQ8O01yoSb_LlaL42_URqRb2HHWu6R91Bs_QHixyPFldNrBX1_ZEuXW8B8EbFg
+2019-10-23 22:15:12 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:15:12 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:15:12 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTA5MTJ9.l8b7LveDRS0NcHtlND1JTqIgyhWsjUw8IW_L3xqgIDzDEls4-VFvA1LyzsDyvSYZ5mQh0NvgJPXv0MWPK1JbbA
+2019-10-23 22:43:05 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:43:16 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:43:16 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:43:16 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTI1OTZ9.pMv1lIWAYgrrPlP5-JknHJVXxwEDUoUKn0lETx28b0jb3LGQFwH_LMwGPoBlQvPSntSiytHObvtTzaevOfqOVA
+2019-10-23 22:48:34 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:48:34 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:48:34 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTI5MTR9.Ogy6_Zo-mZaE27z0aKM0gooBg6fLKk4nj41zxIQBgKVd_o5rEXPD3NmBWPkhQuTyCCfTWwseic35clHXnwyv8A
+2019-10-23 22:55:39 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:55:45 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:55:45 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:55:45 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTMzNDV9.jfLU_wtYQY-_z5ANh7BcDPXZk67VhrB_ZIYq5uqoyCWm_hY6fE5xlSz_J-sOSMw7K6tIXLGQ3HKZnqwBbuntGQ
+2019-10-23 22:57:50 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:58:34 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 22:58:49 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 22:58:50 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 22:58:50 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:58:59 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:13 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:14 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:15 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:15 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:16 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:17 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:18 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:18 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:19 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 22:59:19 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM1MzB9.TB25N8ChJ25FKGQwnEapvEJVCNXVNoDrMYX_2R0SHM5Dls7m2vlnKCx4LGkbhVgVMCNodjfyWgrVpwTpnMJOvw
+2019-10-23 23:01:37 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 23:01:40 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 23:01:41 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 23:02:13 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 23:02:21 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 23:02:22 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 23:02:22 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM3NDJ9.5JjIjgZGiuh1n7TsTChnlr7pMnjCeb1riyohC7WVVvbctyKnZ6KDs0WTlTjPnMhX9VcZjhwtAwM8bdPMnRV_8w
+2019-10-23 23:02:30 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM3NDJ9.5JjIjgZGiuh1n7TsTChnlr7pMnjCeb1riyohC7WVVvbctyKnZ6KDs0WTlTjPnMhX9VcZjhwtAwM8bdPMnRV_8w
+2019-10-23 23:12:51 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 23:13:07 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 23:13:08 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 23:13:08 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTQzODh9.KbZysWQtkXnNt-AL8OPJrBg31oTiFITOM81YyLGM_N7t-E3akDKE1PaOVx_Yq6QqSNTB_3xRxQvYmrtyfv4BuA
+2019-10-23 23:13:11 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM3NDJ9.5JjIjgZGiuh1n7TsTChnlr7pMnjCeb1riyohC7WVVvbctyKnZ6KDs0WTlTjPnMhX9VcZjhwtAwM8bdPMnRV_8w
+2019-10-23 23:15:37 INFO  MobileAppWsApplication:21 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 23:15:59 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM3NDJ9.5JjIjgZGiuh1n7TsTChnlr7pMnjCeb1riyohC7WVVvbctyKnZ6KDs0WTlTjPnMhX9VcZjhwtAwM8bdPMnRV_8w
+2019-10-23 23:17:15 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTM3NDJ9.5JjIjgZGiuh1n7TsTChnlr7pMnjCeb1riyohC7WVVvbctyKnZ6KDs0WTlTjPnMhX9VcZjhwtAwM8bdPMnRV_8w
+2019-10-23 23:17:18 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 23:17:18 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 23:17:18 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI3NTQ2Mzh9.Rqy5IP8OhFIyRDCzwmPUvxnXDHgwnle6l7OiOu4Io7sYu4nQqtC9JnyOSVSQshzRIyf924j07CTfZ6VahOLNkQ
+2019-10-23 23:20:32 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-23 23:20:33 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-23 23:20:33 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-23 23:20:34 INFO  Authenticationfilter:79 - successfulAuthentication token : jf5gldi4gjfn3fo2w
+2019-10-25 18:50:45 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-25 18:50:47 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-25 18:50:48 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-25 18:50:48 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI5MTE0NDh9.rJqza_4h3X-Wedt7RlFzWUDdAudLcM-Br0Fv9B2NrUZcE1XrArfKc6jFhx4YZSu-ij9P9DEqSmhqiO-RNqo5Xw

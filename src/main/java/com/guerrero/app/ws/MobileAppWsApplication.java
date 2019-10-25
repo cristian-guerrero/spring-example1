@@ -1,5 +1,6 @@
 package com.guerrero.app.ws;
 
+import com.guerrero.app.ws.security.AppProperties;
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,4 +27,5 @@ public class MobileAppWsApplication {
 	public SpringApplicationContext springApplicationContext() {
 		return new SpringApplicationContext();
 	}
+
 }
