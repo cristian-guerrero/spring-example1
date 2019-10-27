@@ -172,3 +172,30 @@
 2019-10-25 20:42:26 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI5MTE3NTh9.oHs7ii20TY0hbTSTVrhhv1EZb92KP8KlYiXopxfjcDbz2P_aEFBbCOmquXYrawM8TMsI7armpiuQoGqS0uB4tQ
 2019-10-25 20:51:30 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
 2019-10-25 20:51:36 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI5MTE3NTh9.oHs7ii20TY0hbTSTVrhhv1EZb92KP8KlYiXopxfjcDbz2P_aEFBbCOmquXYrawM8TMsI7armpiuQoGqS0uB4tQ
+2019-10-26 20:48:42 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 20:49:35 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-26 20:49:36 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-26 20:49:36 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMDQ5NzZ9.HuNQubjq5c2mb83DyQHt4JbAyeZ7tD_i9aFULK6zodfdJ68YYFmyNVqL7XCtAmz2j0__T04Nc6JkT11m5PqoCg
+2019-10-26 22:20:46 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 22:21:01 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-26 22:21:01 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-26 22:21:01 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA0NjF9.gi9h68-8oK110nQG4P8s41-TOwdzKy3vnjfKVCzxZbdb_i0bMBpUOkKgWLMX_jfF8DYht8WBdstOQ30_N_hDww
+2019-10-26 22:23:57 INFO  Authenticationfilter:44 - attemptAuthentication for: cristian.guerrero@gmail.com
+2019-10-26 22:23:57 INFO  Authenticationfilter:67 - successfulAuthentication user: cristian.guerrero@gmail.com
+2019-10-26 22:23:57 INFO  Authenticationfilter:79 - successfulAuthentication token : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 22:24:32 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 22:40:34 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 22:40:49 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 22:41:18 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 22:44:47 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzI5MTE3NTh9.oHs7ii20TY0hbTSTVrhhv1EZb92KP8KlYiXopxfjcDbz2P_aEFBbCOmquXYrawM8TMsI7armpiuQoGqS0uB4tQ
+2019-10-26 22:50:42 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 22:50:47 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 22:51:44 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 22:51:50 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 22:52:02 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 23:05:53 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 23:06:15 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 23:06:58 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder
+2019-10-26 23:07:04 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-26 23:07:12 INFO  AuthorizationFilter:52 - getAuthentication token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmlzdGlhbi5ndWVycmVyb0BnbWFpbC5jb20iLCJleHAiOjE1NzMwMTA2Mzd9.tyFuULw5HrqcNVVfKuSRZEf5aNmzvmZMEmkbnoVRXCZH6IAT47VIriedP-b_9LLxxi8c2d9muHb9yreoFDOD2Q
+2019-10-27 07:24:16 INFO  MobileAppWsApplication:22 - MobileAppWsApplication.bCryptPasswordEncoder

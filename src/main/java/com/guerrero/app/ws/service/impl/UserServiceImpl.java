@@ -1,10 +1,12 @@
 package com.guerrero.app.ws.service.impl;
 
 import com.guerrero.app.ws.entity.UserEntity;
+import com.guerrero.app.ws.exceptions.UserServiceException;
 import com.guerrero.app.ws.io.repositories.UserRepository;
 import com.guerrero.app.ws.service.UserService;
 import com.guerrero.app.ws.shared.Utils;
 import com.guerrero.app.ws.shared.dto.UserDto;
+import com.guerrero.app.ws.ui.model.response.ErrorMessages;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
@@ -93,6 +95,35 @@ public class UserServiceImpl implements UserService {
 
     return userDto;
 
+  }
+
+  @Override
+  public UserDto updateUser(String id, UserDto user) {
+
+    UserEntity userEntity = userRepository.findUserByUserId(id);
+
+    if(userEntity == null) { throw new UserServiceException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage()); }
+
+
+    userEntity.setFirstName(user.getFirstName());
+    userEntity.setLastName(user.getLastName());
+
+
+    UserEntity storeUserDetails = userRepository.save(userEntity);
+    UserDto returnValue = new UserDto();
+
+    BeanUtils.copyProperties(storeUserDetails, returnValue);
+
+    return returnValue;
+  }
+
+  @Override
+  public void deleteUser(String userId) {
+
+    UserEntity userEntity = userRepository.findUserByUserId(userId);
+    if(userEntity == null) { throw new UserServiceException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage()); }
+
+    userRepository.delete(userEntity);
 
   }
 }
