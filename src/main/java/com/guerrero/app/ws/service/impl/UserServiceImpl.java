@@ -7,8 +7,12 @@ import com.guerrero.app.ws.service.UserService;
 import com.guerrero.app.ws.shared.Utils;
 import com.guerrero.app.ws.shared.dto.UserDto;
 import com.guerrero.app.ws.ui.model.response.ErrorMessages;
+import com.guerrero.app.ws.ui.model.response.UserRest;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,6 +20,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -125,5 +130,29 @@ public class UserServiceImpl implements UserService {
 
     userRepository.delete(userEntity);
 
+  }
+
+  /**
+   * metodo para retornar paginado
+   * @param page
+   * @param limit
+   * @return
+   */
+  @Override
+  public List<UserDto> getUsers(int page, int limit) {
+    List<UserDto> returnValue = new ArrayList<>();
+
+    Pageable pageable = PageRequest.of(page, limit);
+
+    Page<UserEntity> usersPage = userRepository.findAll(pageable);
+
+    List<UserEntity> users = usersPage.getContent();
+
+    for (UserEntity userDto1: users) {
+      UserDto userDto = new UserDto();
+      BeanUtils.copyProperties(userDto1, userDto);
+      returnValue.add(userDto);
+    }
+    return returnValue;
   }
 }

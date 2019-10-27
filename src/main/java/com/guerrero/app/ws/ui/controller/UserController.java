@@ -21,9 +21,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.awt.PageAttributes;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "users",
@@ -92,4 +95,23 @@ public class UserController {
     userService.deleteUser(id);
     return operationStatusModel;
   }
+
+
+  @GetMapping
+  public List<UserRest> getUsers(@RequestParam(value = "page", defaultValue = "0") int page,
+                                 @RequestParam(value = "limit", defaultValue = "10") int limit) {
+
+    List<UserRest> returnValue = new ArrayList<>();
+
+    List<UserDto> users = userService.getUsers(page, limit);
+
+    for (UserDto userDto1: users) {
+      UserRest userRest = new UserRest();
+      BeanUtils.copyProperties(userDto1, userRest);
+      returnValue.add(userRest);
+    }
+
+    return returnValue;
+  }
+
 }
