@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.security.SecureRandom;
 import java.util.Random;
+import java.util.UUID;
 
 @Component
 public class Utils {
@@ -19,6 +20,11 @@ public class Utils {
     return generateRandomString(length);
   }
 
+  public String generateAddressId(int length) {
+
+    return generateRandomString(length);
+  }
+
   private String generateRandomString(int length) {
     StringBuilder returnValue = new StringBuilder(length);
 
@@ -27,5 +33,10 @@ public class Utils {
 
     }
     return new String(returnValue);
+  }
+
+
+  public  String randomUUID()  {
+    return UUID.randomUUID().toString();
   }
 }

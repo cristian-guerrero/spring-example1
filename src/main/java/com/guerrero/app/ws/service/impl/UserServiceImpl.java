@@ -5,9 +5,10 @@ import com.guerrero.app.ws.exceptions.UserServiceException;
 import com.guerrero.app.ws.io.repositories.UserRepository;
 import com.guerrero.app.ws.service.UserService;
 import com.guerrero.app.ws.shared.Utils;
+import com.guerrero.app.ws.shared.dto.AddressDto;
 import com.guerrero.app.ws.shared.dto.UserDto;
 import com.guerrero.app.ws.ui.model.response.ErrorMessages;
-import com.guerrero.app.ws.ui.model.response.UserRest;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,10 +19,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -37,6 +38,7 @@ public class UserServiceImpl implements UserService {
 
   /**
    * metodo sobre escrito para poder implementar spring security
+   *
    * @param s
    * @return
    * @throws UsernameNotFoundException
@@ -45,7 +47,7 @@ public class UserServiceImpl implements UserService {
   public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
     UserEntity userEntity = userRepository.findByEmail(s);
 
-    if(userEntity == null) {
+    if (userEntity == null) {
       throw new UsernameNotFoundException(s);
     }
     return new User(userEntity.getEmail(), userEntity.getEncryptedPassword(), new ArrayList<>());
@@ -54,22 +56,26 @@ public class UserServiceImpl implements UserService {
   @Override
   public UserDto createUser(UserDto user) {
 
-    UserEntity userEntity = new UserEntity();
-    BeanUtils.copyProperties(user, userEntity);
 
-    //
+    setAddressesProperties(user);
+    ModelMapper modelMapper = new ModelMapper();
+
+
+    UserEntity userEntity = modelMapper.map(user, UserEntity.class);
+
+
     userEntity.setEncryptedPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 
-    String uuid = UUID.randomUUID().toString();
+    String uuid = utils.randomUUID();
     // String publicUserId = utils.generateUserId(30);
     // userEntity.setUserId(publicUserId);
     userEntity.setUserId(uuid);
     //
 
     UserEntity storeUserDetails = userRepository.save(userEntity);
-    UserDto returnValue = new UserDto();
+    UserDto returnValue = modelMapper.map(storeUserDetails, UserDto.class);
 
-    BeanUtils.copyProperties(storeUserDetails, returnValue);
+    // BeanUtils.copyProperties(storeUserDetails, returnValue);
 
     return returnValue;
   }
@@ -78,7 +84,9 @@ public class UserServiceImpl implements UserService {
   public UserDto getUser(String email) {
 
     UserEntity userEntity = userRepository.findByEmail(email);
-    if(userEntity == null) { throw new UsernameNotFoundException(email); }
+    if (userEntity == null) {
+      throw new UsernameNotFoundException(email);
+    }
 
     UserDto returnValue = new UserDto();
 
@@ -86,19 +94,22 @@ public class UserServiceImpl implements UserService {
     return returnValue;
   }
 
+  @Transactional
   @Override
   public UserDto getUserByUserId(String id) {
 
-   UserEntity userEntity = userRepository.findUserByUserId(id);
+    UserEntity userEntity = userRepository.findUserByUserId(id);
 
-    if(userEntity == null) { throw new UsernameNotFoundException(id); }
+    if (userEntity == null) {
+      throw new UsernameNotFoundException(id);
+    }
 
+    // todo corregir el error que no carga las direcciones para el usuario dado
 
-    UserDto userDto = new UserDto();
+    ModelMapper modelMapper = new ModelMapper();
+    UserDto returnValue = modelMapper.map(userEntity, UserDto.class);
 
-    BeanUtils.copyProperties(userEntity, userDto);
-
-    return userDto;
+    return returnValue;
 
   }
 
@@ -107,7 +118,9 @@ public class UserServiceImpl implements UserService {
 
     UserEntity userEntity = userRepository.findUserByUserId(id);
 
-    if(userEntity == null) { throw new UserServiceException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage()); }
+    if (userEntity == null) {
+      throw new UserServiceException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage());
+    }
 
 
     userEntity.setFirstName(user.getFirstName());
@@ -126,7 +139,9 @@ public class UserServiceImpl implements UserService {
   public void deleteUser(String userId) {
 
     UserEntity userEntity = userRepository.findUserByUserId(userId);
-    if(userEntity == null) { throw new UserServiceException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage()); }
+    if (userEntity == null) {
+      throw new UserServiceException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage());
+    }
 
     userRepository.delete(userEntity);
 
@@ -134,6 +149,7 @@ public class UserServiceImpl implements UserService {
 
   /**
    * metodo para retornar paginado
+   *
    * @param page
    * @param limit
    * @return
@@ -148,11 +164,22 @@ public class UserServiceImpl implements UserService {
 
     List<UserEntity> users = usersPage.getContent();
 
-    for (UserEntity userDto1: users) {
+    for (UserEntity userDto1 : users) {
       UserDto userDto = new UserDto();
       BeanUtils.copyProperties(userDto1, userDto);
       returnValue.add(userDto);
     }
     return returnValue;
+  }
+
+
+  private void  setAddressesProperties(UserDto userDto) {
+    if (userDto.getAddresses() != null) {
+
+      for (AddressDto a : userDto.getAddresses()) {
+        a.setAddressId(utils.randomUUID());
+        a.setUserDetails(userDto);
+      }
+    }
   }
 }

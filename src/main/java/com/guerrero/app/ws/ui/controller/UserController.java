@@ -1,19 +1,25 @@
 package com.guerrero.app.ws.ui.controller;
 
 import com.guerrero.app.ws.exceptions.UserServiceException;
+import com.guerrero.app.ws.service.AddressService;
 import com.guerrero.app.ws.service.UserService;
+import com.guerrero.app.ws.shared.dto.AddressDto;
 import com.guerrero.app.ws.shared.dto.UserDto;
 import com.guerrero.app.ws.ui.model.request.UserDetailRequestModel;
+import com.guerrero.app.ws.ui.model.response.AddressRest;
 import com.guerrero.app.ws.ui.model.response.ErrorMessages;
 import com.guerrero.app.ws.ui.model.response.OperationStatusModel;
 import com.guerrero.app.ws.ui.model.response.RequestOperationName;
 import com.guerrero.app.ws.ui.model.response.RequestOperationStatus;
 import com.guerrero.app.ws.ui.model.response.UserRest;
 import org.apache.log4j.Logger;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,10 +30,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.awt.PageAttributes;
+import javax.validation.constraints.Min;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+@Validated
 @RestController
 @RequestMapping(path = "users",
     consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
@@ -38,14 +46,19 @@ public class UserController {
   @Autowired
   UserService userService;
 
+  @Autowired
+  AddressService addressService;
+
+
   @GetMapping(path = "/{id}")
   public UserRest getUser(@PathVariable String id) {
 
-    UserRest returnValue = new UserRest();
+    ModelMapper modelMapper = new ModelMapper();
 
     UserDto userDto = userService.getUserByUserId(id);
 
-    BeanUtils.copyProperties(userDto, returnValue);
+    UserRest returnValue = modelMapper.map(userDto, UserRest.class);
+    // BeanUtils.copyProperties(userDto, returnValue);
     return returnValue;
   }
 
@@ -55,14 +68,15 @@ public class UserController {
     if (userDetails.getFirstName() == null)
       throw new NullPointerException(ErrorMessages.MISSING_REQUIRED_FIELD.getErrorMessage());
 
-    UserRest returnValue = new UserRest();
-    UserDto userDto = new UserDto();
-    BeanUtils.copyProperties(userDetails, userDto);
+    ModelMapper modelMapper = new ModelMapper();
+    UserDto userDto = modelMapper.map(userDetails, UserDto.class);
 
-    logger.info(userDetails.getFirstName());
     UserDto createdUser = userService.createUser(userDto);
 
-    BeanUtils.copyProperties(createdUser, returnValue);
+    UserRest returnValue = modelMapper.map(createdUser, UserRest.class);
+
+    logger.info(returnValue.getFirstName());
+
 
     return returnValue;
   }
@@ -97,21 +111,47 @@ public class UserController {
   }
 
 
+  /**
+   * validacion que la pagina no sea menor a cero
+   *
+   * @param page
+   * @param limit
+   * @return
+   */
   @GetMapping
-  public List<UserRest> getUsers(@RequestParam(value = "page", defaultValue = "0") int page,
+  public List<UserRest> getUsers(@RequestParam(value = "page", defaultValue = "0") @Min(0) int page,
                                  @RequestParam(value = "limit", defaultValue = "10") int limit) {
 
     List<UserRest> returnValue = new ArrayList<>();
 
     List<UserDto> users = userService.getUsers(page, limit);
 
-    for (UserDto userDto1: users) {
+    for (UserDto userDto1 : users) {
       UserRest userRest = new UserRest();
       BeanUtils.copyProperties(userDto1, userRest);
       returnValue.add(userRest);
     }
 
     return returnValue;
+  }
+
+  @GetMapping(path = "/{id}/addresses")
+  public List<AddressRest> getUserAddresses(@PathVariable String id) {
+
+    ModelMapper modelMapper = new ModelMapper();
+    List<AddressRest> returnValue = new ArrayList<>();
+
+    List<AddressDto> addressDtoList = addressService.getAddress(id);
+
+    if (addressDtoList != null) {
+
+      Type listType = new TypeToken<List<AddressRest>>() {}.getType();
+
+      returnValue = modelMapper.map(addressDtoList, listType);
+
+    }
+    return returnValue;
+
   }
 
 }
