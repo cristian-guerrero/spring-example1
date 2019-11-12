@@ -8,4 +8,5 @@ public interface AddressService {
 
 
   List<AddressDto> getAddress(String id );
+  AddressDto getAddressById(String id );
 }

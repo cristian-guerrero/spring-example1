@@ -52,4 +52,16 @@ public class AddressServiceImpl implements AddressService {
 
     return returnValue;
   }
+
+  @Transactional
+  @Override
+  public AddressDto getAddressById(String id) {
+
+    AddressEntity addressEntity = addressRepository.findByAddressId(id);
+
+    ModelMapper modelMapper = new ModelMapper();
+
+    AddressDto addressDto = modelMapper.map(addressEntity, AddressDto.class);
+    return addressDto;
+  }
 }

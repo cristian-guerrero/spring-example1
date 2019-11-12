@@ -14,4 +14,6 @@ public interface AddressRepository  extends PagingAndSortingRepository<AddressEn
   List<AddressEntity> findByUserDetails(UserEntity userId);
 
 
+  AddressEntity findByAddressId (String id);
+
 }
